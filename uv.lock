@@ -101,6 +101,18 @@ wheels = [
 ]
 
 [[package]]
+name = "ecdsa"
+version = "0.19.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c0/1f/924e3caae75f471eae4b26bd13b698f6af2c44279f67af317439c2f4c46a/ecdsa-0.19.1.tar.gz", hash = "sha256:478cba7b62555866fcb3bb3fe985e06decbdb68ef55713c4e5ab98c57d508e61", size = 201793, upload-time = "2025-03-13T11:52:43.25Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cb/a3/460c57f094a4a165c84a1341c373b0a4f5ec6ac244b998d5021aade89b77/ecdsa-0.19.1-py2.py3-none-any.whl", hash = "sha256:30638e27cf77b7e15c4c4cc1973720149e1033827cfd00661ca5c8cc0cdb24c3", size = 150607, upload-time = "2025-03-13T11:52:41.757Z" },
+]
+
+[[package]]
 name = "faker"
 version = "40.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -548,14 +560,19 @@ all = [
     { name = "django-getpaid" },
     { name = "fastapi-getpaid" },
     { name = "litestar-getpaid" },
+    { name = "python-getpaid-bitpay" },
     { name = "python-getpaid-paynow" },
     { name = "python-getpaid-payu" },
     { name = "python-getpaid-przelewy24" },
 ]
 backends = [
+    { name = "python-getpaid-bitpay" },
     { name = "python-getpaid-paynow" },
     { name = "python-getpaid-payu" },
     { name = "python-getpaid-przelewy24" },
+]
+bitpay = [
+    { name = "python-getpaid-bitpay" },
 ]
 django = [
     { name = "django-getpaid" },
@@ -587,6 +604,7 @@ requires-dist = [
     { name = "fastapi-getpaid", marker = "extra == 'fastapi'", specifier = ">=0.1.0" },
     { name = "litestar-getpaid", marker = "extra == 'litestar'", specifier = ">=0.1.0" },
     { name = "python-getpaid", extras = ["backends"], marker = "extra == 'all'" },
+    { name = "python-getpaid", extras = ["bitpay"], marker = "extra == 'backends'" },
     { name = "python-getpaid", extras = ["django"], marker = "extra == 'frameworks'" },
     { name = "python-getpaid", extras = ["fastapi"], marker = "extra == 'frameworks'" },
     { name = "python-getpaid", extras = ["frameworks"], marker = "extra == 'all'" },
@@ -594,12 +612,28 @@ requires-dist = [
     { name = "python-getpaid", extras = ["paynow"], marker = "extra == 'backends'" },
     { name = "python-getpaid", extras = ["payu"], marker = "extra == 'backends'" },
     { name = "python-getpaid", extras = ["przelewy24"], marker = "extra == 'backends'" },
+    { name = "python-getpaid-bitpay", marker = "extra == 'bitpay'", specifier = ">=0.1.0" },
     { name = "python-getpaid-core", specifier = ">=0.1.0" },
     { name = "python-getpaid-paynow", marker = "extra == 'paynow'", specifier = ">=0.1.0" },
     { name = "python-getpaid-payu", marker = "extra == 'payu'", specifier = ">=0.1.0" },
     { name = "python-getpaid-przelewy24", marker = "extra == 'przelewy24'", specifier = ">=0.1.0" },
 ]
-provides-extras = ["payu", "paynow", "przelewy24", "django", "fastapi", "litestar", "backends", "frameworks", "all"]
+provides-extras = ["payu", "paynow", "przelewy24", "bitpay", "django", "fastapi", "litestar", "backends", "frameworks", "all"]
+
+[[package]]
+name = "python-getpaid-bitpay"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "ecdsa" },
+    { name = "httpx" },
+    { name = "python-getpaid-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fc/f8/7cda61a6902bd62657f5560a2dbadb1cf0e04eb43eda3846a019f70edb3e/python_getpaid_bitpay-0.1.0.tar.gz", hash = "sha256:bcf7a2121d840913a09db1182753317f495aea8a735989e4907346dd2a8b1b1d", size = 58702, upload-time = "2026-02-14T22:00:31.212Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c1/4b/c9e3d844bd6dc0f010b99210aaf100ebb6790db2412d04ca25f54d7f8efa/python_getpaid_bitpay-0.1.0-py3-none-any.whl", hash = "sha256:931ba92a280b5b33316660cb876351e6430e925bf562b6af5bcd9739af781d1b", size = 12278, upload-time = "2026-02-14T22:00:32.99Z" },
+]
 
 [[package]]
 name = "python-getpaid-core"

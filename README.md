@@ -16,6 +16,7 @@ pip install python-getpaid
 pip install python-getpaid[payu]
 pip install python-getpaid[paynow]
 pip install python-getpaid[przelewy24]
+pip install python-getpaid[bitpay]
 pip install python-getpaid[backends]       # all backends
 ```
 
@@ -41,6 +42,7 @@ pip install python-getpaid[all]
 | `payu` | `python-getpaid-payu` |
 | `paynow` | `python-getpaid-paynow` |
 | `przelewy24` | `python-getpaid-przelewy24` |
+| `bitpay` | `python-getpaid-bitpay` |
 | `django` | `django-getpaid` |
 | `fastapi` | `fastapi-getpaid` |
 | `litestar` | `litestar-getpaid` |

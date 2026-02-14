@@ -26,6 +26,7 @@ dependencies = [
 payu = ['python-getpaid-payu>=0.1.0']
 paynow = ['python-getpaid-paynow>=0.1.0']
 przelewy24 = ['python-getpaid-przelewy24>=0.1.0']
+bitpay = ['python-getpaid-bitpay>=0.1.0']
 
 # --- Framework adapters ---
 django = ['django-getpaid>=3.0.0a1']
@@ -37,6 +38,7 @@ backends = [
     'python-getpaid[payu]',
     'python-getpaid[paynow]',
     'python-getpaid[przelewy24]',
+    'python-getpaid[bitpay]',
 ]
 frameworks = [
     'python-getpaid[django]',
