@@ -1,0 +1,63 @@
+[project]
+name = 'python-getpaid'
+version = '0.1.0'
+description = 'Umbrella package for the python-getpaid payment processing ecosystem.'
+readme = 'README.md'
+license = 'MIT'
+authors = [
+    {name = 'Dominik Kozaczko', email = 'dominik@kozaczko.info'},
+]
+requires-python = '>=3.12'
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Topic :: Office/Business :: Financial',
+    'Topic :: Office/Business :: Financial :: Point-Of-Sale',
+    'Typing :: Typed',
+]
+dependencies = [
+    'python-getpaid-core>=0.1.0',
+]
+
+[project.optional-dependencies]
+# --- Payment gateway backends ---
+payu = ['python-getpaid-payu>=0.1.0']
+paynow = ['python-getpaid-paynow>=0.1.0']
+przelewy24 = ['python-getpaid-przelewy24>=0.1.0']
+
+# --- Framework adapters ---
+django = ['django-getpaid>=3.0.0a1']
+fastapi = ['fastapi-getpaid>=0.1.0']
+litestar = ['litestar-getpaid>=0.1.0']
+
+# --- Bundles ---
+backends = [
+    'python-getpaid[payu]',
+    'python-getpaid[paynow]',
+    'python-getpaid[przelewy24]',
+]
+frameworks = [
+    'python-getpaid[django]',
+    'python-getpaid[fastapi]',
+    'python-getpaid[litestar]',
+]
+all = [
+    'python-getpaid[backends]',
+    'python-getpaid[frameworks]',
+]
+
+[project.urls]
+Homepage = 'https://github.com/django-getpaid/python-getpaid'
+Repository = 'https://github.com/django-getpaid/python-getpaid'
+Documentation = 'https://python-getpaid.readthedocs.io'
+Changelog = 'https://github.com/django-getpaid/python-getpaid/releases'
+
+[build-system]
+requires = ['setuptools>=75.0']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools]
+# Metadata-only package -- no Python source to ship.
+py-modules = []
