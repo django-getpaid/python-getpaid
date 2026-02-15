@@ -549,7 +549,7 @@ wheels = [
 
 [[package]]
 name = "python-getpaid"
-version = "0.1.0"
+version = "0.1.1"
 source = { editable = "." }
 dependencies = [
     { name = "python-getpaid-core" },

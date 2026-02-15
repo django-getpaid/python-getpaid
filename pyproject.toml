@@ -1,6 +1,6 @@
 [project]
 name = 'python-getpaid'
-version = '0.1.0'
+version = "0.1.1"
 description = 'Umbrella package for the python-getpaid payment processing ecosystem.'
 readme = 'README.md'
 license = 'MIT'
