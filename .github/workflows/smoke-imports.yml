@@ -1,0 +1,81 @@
+name: Smoke imports
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  smoke-imports:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        extra:
+          - base
+          - payu
+          - paynow
+          - przelewy24
+          - bitpay
+          - fastapi
+          - litestar
+          - django
+          - backends
+          - frameworks
+          - all
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install package variant
+        run: |
+          python -m pip install --upgrade pip
+          if [ "${{ matrix.extra }}" = "base" ]; then
+            pip install .
+          else
+            pip install ".[${{ matrix.extra }}]"
+          fi
+      - name: Smoke import installed modules
+        env:
+          EXTRA: ${{ matrix.extra }}
+        run: |
+          python - <<'PY'
+          import importlib
+          import os
+
+          extra = os.environ["EXTRA"]
+          modules = ["getpaid_core"]
+
+          modules_by_extra = {
+              "payu": ["getpaid_payu"],
+              "paynow": ["getpaid_paynow"],
+              "przelewy24": ["getpaid_przelewy24"],
+              "bitpay": ["getpaid_bitpay"],
+              "fastapi": ["fastapi_getpaid"],
+              "litestar": ["litestar_getpaid"],
+              "django": ["getpaid"],
+              "backends": [
+                  "getpaid_payu",
+                  "getpaid_paynow",
+                  "getpaid_przelewy24",
+                  "getpaid_bitpay",
+              ],
+              "frameworks": ["getpaid", "fastapi_getpaid", "litestar_getpaid"],
+              "all": [
+                  "getpaid",
+                  "fastapi_getpaid",
+                  "litestar_getpaid",
+                  "getpaid_payu",
+                  "getpaid_paynow",
+                  "getpaid_przelewy24",
+                  "getpaid_bitpay",
+              ],
+          }
+
+          modules.extend(modules_by_extra.get(extra, []))
+          for module in modules:
+              importlib.import_module(module)
+              print(f"Imported: {module}")
+          PY
