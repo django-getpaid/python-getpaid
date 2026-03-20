@@ -1,6 +1,6 @@
 [project]
 name = 'python-getpaid'
-version = "0.1.1"
+version = "3.0.0a3"
 description = 'Umbrella package for the python-getpaid payment processing ecosystem.'
 readme = 'README.md'
 license = 'MIT'
@@ -18,20 +18,20 @@ classifiers = [
     'Typing :: Typed',
 ]
 dependencies = [
-    'python-getpaid-core>=0.1.0',
+    'python-getpaid-core>=3.0.0a3',
 ]
 
 [project.optional-dependencies]
 # --- Payment gateway backends ---
-payu = ['python-getpaid-payu>=0.1.0']
-paynow = ['python-getpaid-paynow>=0.1.0']
-przelewy24 = ['python-getpaid-przelewy24>=0.1.0']
-bitpay = ['python-getpaid-bitpay>=0.1.0']
+payu = ['python-getpaid-payu>=3.0.0a3']
+paynow = ['python-getpaid-paynow>=3.0.0a3']
+przelewy24 = ['python-getpaid-przelewy24>=3.0.0a3']
+bitpay = ['python-getpaid-bitpay>=3.0.0a3']
 
 # --- Framework adapters ---
-django = ['django-getpaid>=3.0.0a1']
-fastapi = ['fastapi-getpaid>=0.1.0']
-litestar = ['litestar-getpaid>=0.1.0']
+django = ['django-getpaid>=3.0.0a3']
+fastapi = ['fastapi-getpaid>=3.0.0a3']
+litestar = ['litestar-getpaid>=3.0.0a3']
 
 # --- Bundles ---
 backends = [
