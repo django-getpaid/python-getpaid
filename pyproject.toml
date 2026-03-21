@@ -1,6 +1,6 @@
 [project]
 name = 'python-getpaid'
-version = "3.0.0a3"
+version = "3.0.0a4"
 description = 'Umbrella package for the python-getpaid payment processing ecosystem.'
 readme = 'README.md'
 license = 'MIT'
@@ -23,8 +23,8 @@ dependencies = [
 
 [project.optional-dependencies]
 # --- Payment gateway backends ---
-payu = ['python-getpaid-payu>=3.0.0a3']
-paynow = ['python-getpaid-paynow>=3.0.0a3']
+payu = ['python-getpaid-payu>=3.0.0a4']
+paynow = ['python-getpaid-paynow>=3.0.0a4']
 przelewy24 = ['python-getpaid-przelewy24>=3.0.0a3']
 bitpay = ['python-getpaid-bitpay>=3.0.0a3']
 
