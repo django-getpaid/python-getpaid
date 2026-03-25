@@ -88,16 +88,16 @@ wheels = [
 
 [[package]]
 name = "django-getpaid"
-version = "3.0.0a1"
+version = "3.0.0a4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "django" },
     { name = "python-getpaid-core" },
     { name = "swapper" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/40/11/afa731df1d44b5b98856b3f77aa02f3b3082ec245c22b355c895c19c31ea/django_getpaid-3.0.0a1.tar.gz", hash = "sha256:9ff7407859cec7590d035535be99553b91f1dbacedfe906352d2b9f8499714a7", size = 127062, upload-time = "2026-02-13T20:48:47.501Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/74/2a/c977e58d8e0947e7221fc90770cfc4677ccf7edb48cd19129659b9c7d306/django_getpaid-3.0.0a4.tar.gz", hash = "sha256:ec67590fefc88a95d11222b334c992b6f0fe8eb3cb767f76032152760eb61e51", size = 88468, upload-time = "2026-03-22T21:03:32.326Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bd/74/91b440257d2f02d5e45c2e23961936ca5cfc04dce6b1d06119e39554ed19/django_getpaid-3.0.0a1-py3-none-any.whl", hash = "sha256:b2547ea2eb76f399d3a8d68bf4b1797dc7c8421017fe02a1aedce345b906c470", size = 25709, upload-time = "2026-02-13T20:48:45.62Z" },
+    { url = "https://files.pythonhosted.org/packages/48/b6/c37bbfd4e089d1b5fead80b7483967db41c21bf98702b11c90830ad487e1/django_getpaid-3.0.0a4-py3-none-any.whl", hash = "sha256:104c73146e466545688a98f76b8eb701a107e8bdc5693d8f1bf9d470d5ed23dd", size = 30368, upload-time = "2026-03-22T21:03:30.13Z" },
 ]
 
 [[package]]
@@ -142,16 +142,16 @@ wheels = [
 
 [[package]]
 name = "fastapi-getpaid"
-version = "0.1.0"
+version = "3.0.0a3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "fastapi" },
     { name = "pydantic-settings" },
     { name = "python-getpaid-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1d/6b/72367c2e16e8edcaa64a90a1c9c7dfdc3e8ef9a01764bf4df912c118f6d2/fastapi_getpaid-0.1.0.tar.gz", hash = "sha256:4122545168c84ace243f0107a91b083285f2d8364ecf9f45f9887b95ab59f5d9", size = 37271, upload-time = "2026-02-14T19:26:14.91Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/cf/75/7bcfbcdf21cd14768f2e984763c4af48ae9f1ed24e10fc44ebf36e0509b0/fastapi_getpaid-3.0.0a3.tar.gz", hash = "sha256:262cb02944cfae560c90076af6387560a8edbfeac6d23f39fc83bb4a3371a3a9", size = 39888, upload-time = "2026-03-21T00:06:49.039Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/36/4b/a3949e84b05a852a1ffff68784a97c50345ed4bc40bd0df8c4e6d83692ed/fastapi_getpaid-0.1.0-py3-none-any.whl", hash = "sha256:13e540aedc896c0207417f6378fad300fa9d74ca00e9137f7532b628f3af9c22", size = 17452, upload-time = "2026-02-14T19:26:16.007Z" },
+    { url = "https://files.pythonhosted.org/packages/03/2d/52316cad0dc3f8419ee5c12e67c34977d61a81b300979d0b4aca09d6ae38/fastapi_getpaid-3.0.0a3-py3-none-any.whl", hash = "sha256:467661f75ac54e288f53e2d48c9e6f97f2d081c42598d44a08e282ccae4286f6", size = 17811, upload-time = "2026-03-21T00:06:47.91Z" },
 ]
 
 [[package]]
@@ -226,16 +226,16 @@ wheels = [
 
 [[package]]
 name = "litestar-getpaid"
-version = "0.1.0"
+version = "3.0.0a3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "litestar" },
     { name = "pydantic-settings" },
     { name = "python-getpaid-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b2/9b/fc7808394284189030f4d43e870b15f5ade66a867226428ab44248c0f29d/litestar_getpaid-0.1.0.tar.gz", hash = "sha256:ead9b5d404dd55a85cb022810dca4af652e3c8d00e7b8ed4e9798b7ba31ad65e", size = 35031, upload-time = "2026-02-14T19:15:16.194Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8d/f5/005c34036d86e57e4f62a7d52b1a24218dbc5354af9f962c07f2dcb6a84a/litestar_getpaid-3.0.0a3.tar.gz", hash = "sha256:3bd8686e4ac79b42afcd552e5dc58b7234d22faa18b6a5e6319ac8a5c3b6d9c0", size = 38658, upload-time = "2026-03-21T00:06:04.634Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/22/29/1c1cea8c09dbd094cc2d09b27e9c742827a504ec33879e1fafdf2367daf8/litestar_getpaid-0.1.0-py3-none-any.whl", hash = "sha256:3b1fc6c61c77a7cf4e47f104c36353e85288386889ffafa8b60aa4daeaf61cea", size = 17372, upload-time = "2026-02-14T19:15:17.328Z" },
+    { url = "https://files.pythonhosted.org/packages/81/6c/baf3975cf1f1bee2d8d7ae01b90dc8349a9fdb441610cddf56bb5b9a36ee/litestar_getpaid-3.0.0a3-py3-none-any.whl", hash = "sha256:8df6716bef65945f95dcab777500908a7f5ff0e678bf4d5f9946cae3bdef6b46", size = 17730, upload-time = "2026-03-21T00:06:03.352Z" },
 ]
 
 [[package]]
@@ -549,7 +549,7 @@ wheels = [
 
 [[package]]
 name = "python-getpaid"
-version = "0.1.1"
+version = "3.0.0a4"
 source = { editable = "." }
 dependencies = [
     { name = "python-getpaid-core" },
@@ -600,9 +600,9 @@ przelewy24 = [
 
 [package.metadata]
 requires-dist = [
-    { name = "django-getpaid", marker = "extra == 'django'", specifier = ">=3.0.0a1" },
-    { name = "fastapi-getpaid", marker = "extra == 'fastapi'", specifier = ">=0.1.0" },
-    { name = "litestar-getpaid", marker = "extra == 'litestar'", specifier = ">=0.1.0" },
+    { name = "django-getpaid", marker = "extra == 'django'", specifier = ">=3.0.0a3" },
+    { name = "fastapi-getpaid", marker = "extra == 'fastapi'", specifier = ">=3.0.0a3" },
+    { name = "litestar-getpaid", marker = "extra == 'litestar'", specifier = ">=3.0.0a3" },
     { name = "python-getpaid", extras = ["backends"], marker = "extra == 'all'" },
     { name = "python-getpaid", extras = ["bitpay"], marker = "extra == 'backends'" },
     { name = "python-getpaid", extras = ["django"], marker = "extra == 'frameworks'" },
@@ -612,17 +612,17 @@ requires-dist = [
     { name = "python-getpaid", extras = ["paynow"], marker = "extra == 'backends'" },
     { name = "python-getpaid", extras = ["payu"], marker = "extra == 'backends'" },
     { name = "python-getpaid", extras = ["przelewy24"], marker = "extra == 'backends'" },
-    { name = "python-getpaid-bitpay", marker = "extra == 'bitpay'", specifier = ">=0.1.0" },
-    { name = "python-getpaid-core", specifier = ">=0.1.0" },
-    { name = "python-getpaid-paynow", marker = "extra == 'paynow'", specifier = ">=0.1.0" },
-    { name = "python-getpaid-payu", marker = "extra == 'payu'", specifier = ">=0.1.0" },
-    { name = "python-getpaid-przelewy24", marker = "extra == 'przelewy24'", specifier = ">=0.1.0" },
+    { name = "python-getpaid-bitpay", marker = "extra == 'bitpay'", specifier = ">=3.0.0a3" },
+    { name = "python-getpaid-core", specifier = ">=3.0.0a4" },
+    { name = "python-getpaid-paynow", marker = "extra == 'paynow'", specifier = ">=3.0.0a4" },
+    { name = "python-getpaid-payu", marker = "extra == 'payu'", specifier = ">=3.0.0a4" },
+    { name = "python-getpaid-przelewy24", marker = "extra == 'przelewy24'", specifier = ">=3.0.0a3" },
 ]
 provides-extras = ["payu", "paynow", "przelewy24", "bitpay", "django", "fastapi", "litestar", "backends", "frameworks", "all"]
 
 [[package]]
 name = "python-getpaid-bitpay"
-version = "0.1.0"
+version = "3.0.0a3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -630,62 +630,62 @@ dependencies = [
     { name = "httpx" },
     { name = "python-getpaid-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/fc/f8/7cda61a6902bd62657f5560a2dbadb1cf0e04eb43eda3846a019f70edb3e/python_getpaid_bitpay-0.1.0.tar.gz", hash = "sha256:bcf7a2121d840913a09db1182753317f495aea8a735989e4907346dd2a8b1b1d", size = 58702, upload-time = "2026-02-14T22:00:31.212Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/76/1d/d90648641eb7c68e51bbce28267a1c2c18274bd3fb0c3efe4464e1d9b8a9/python_getpaid_bitpay-3.0.0a3.tar.gz", hash = "sha256:ec9eacd4e8c646749143de1474fe828ae0a24d877a42347137568fa846514c4a", size = 59171, upload-time = "2026-03-22T10:51:49.123Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c1/4b/c9e3d844bd6dc0f010b99210aaf100ebb6790db2412d04ca25f54d7f8efa/python_getpaid_bitpay-0.1.0-py3-none-any.whl", hash = "sha256:931ba92a280b5b33316660cb876351e6430e925bf562b6af5bcd9739af781d1b", size = 12278, upload-time = "2026-02-14T22:00:32.99Z" },
+    { url = "https://files.pythonhosted.org/packages/34/ad/78a8a7b831ce8e6d33800f3239b9e9f271d6aa6911e3b8c483f66084d3ca/python_getpaid_bitpay-3.0.0a3-py3-none-any.whl", hash = "sha256:c15d2352b362066ff6ac746ca2d417032cca7416b28cf7c392fd4019781ed20e", size = 11945, upload-time = "2026-03-22T10:51:45.611Z" },
 ]
 
 [[package]]
 name = "python-getpaid-core"
-version = "0.1.0"
+version = "3.0.0a4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
     { name = "httpx" },
     { name = "transitions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4b/24/1b640b2b8f4b96534316f25ff4b68c692bd704fb4dd802306dd1de32419a/python_getpaid_core-0.1.0.tar.gz", hash = "sha256:80d58dd584e1e52ab3e6d25e71bc02b85ebb4914d0bb804ac382e7365eefa72d", size = 106804, upload-time = "2026-02-13T19:58:58.65Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5c/22/c7a3d249398b609022179299f1cde51207db8e4e9556d4cfe7112f276422/python_getpaid_core-3.0.0a4.tar.gz", hash = "sha256:7784ce418391efe3ec1b6c7fddbfe4d8e1741991a9d0ca3a00ada7807ecb8230", size = 52993, upload-time = "2026-03-25T19:06:56.261Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d4/49/0d8d95c630ca03f31b50ce37ec2a9f56b166fbb641a1bbfb0816aa6cea9f/python_getpaid_core-0.1.0-py3-none-any.whl", hash = "sha256:22ef7adda468591dab23982d0fe9082bb1e7554813254df44c8e49eb1dfd9231", size = 13223, upload-time = "2026-02-13T19:58:59.915Z" },
+    { url = "https://files.pythonhosted.org/packages/9e/42/e52551b13b91474e02bcda4517adc2ea21bbb4920f7daae292a5ef795279/python_getpaid_core-3.0.0a4-py3-none-any.whl", hash = "sha256:322afe2a3a777958c1956d1c6ce576f42c93c0cf6ecd1a260bae189a9fa6a97f", size = 15077, upload-time = "2026-03-25T19:06:57.081Z" },
 ]
 
 [[package]]
 name = "python-getpaid-paynow"
-version = "0.1.0"
+version = "3.0.0a4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
     { name = "python-getpaid-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/31/82/dba6c449f53c758fdec4953bf871df64fd280059cbb9d85ee6aacfdd47d6/python_getpaid_paynow-0.1.0.tar.gz", hash = "sha256:f13376ea0a68db9ca72c60c2f483b82bbf73c0520c6035915e67b382cec656be", size = 64620, upload-time = "2026-02-14T09:03:50.9Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/dc/4d/b71d845f792199f2957f76c219d763ade6cb4ab52fbf2e25b3a6fab7c292/python_getpaid_paynow-3.0.0a4.tar.gz", hash = "sha256:f509389d4a30a76264cfdd136a13c55dd51299e66f800001eebac3172f3b75ae", size = 29784, upload-time = "2026-03-21T09:32:48.329Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/af/be/28d32f9a01e0ee5f66b663250449f1629b3b52b58abd8967a12232319c1a/python_getpaid_paynow-0.1.0-py3-none-any.whl", hash = "sha256:8271f6ee5dc447603ade56d4a9524c48b4370058f3f631d4c597187db685c613", size = 11714, upload-time = "2026-02-14T09:03:49.123Z" },
+    { url = "https://files.pythonhosted.org/packages/0c/da/097bf348d46e9cf0007b8ac9959c29d657bd5a07159eed883119b4b4f10f/python_getpaid_paynow-3.0.0a4-py3-none-any.whl", hash = "sha256:523b4bf78b4cdcde206000c0c7cd2ddae6bee78f73e060264237ea418071c128", size = 18143, upload-time = "2026-03-21T09:32:46.681Z" },
 ]
 
 [[package]]
 name = "python-getpaid-payu"
-version = "0.1.0"
+version = "3.0.0a4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
     { name = "python-getpaid-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6a/b8/9cd5bc6e28b37477d6af68255ac5be939a115b9d2543cfddf8069208581e/python_getpaid_payu-0.1.0.tar.gz", hash = "sha256:7f64181eabdfad52df3e3e0ad9d6faa092ad835e46461cd1578145d5406dad7c", size = 69385, upload-time = "2026-02-14T00:56:04.092Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2f/31/c16b7d1d76d369473a803137cc8c6cda04076430ed4a8018d5199ed6ab7e/python_getpaid_payu-3.0.0a4.tar.gz", hash = "sha256:1a9ccd347fb0486cedd50e85de52c3f57b3c823fc89322faffc176a0869f34a8", size = 108221, upload-time = "2026-03-21T09:33:12.122Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/8f/9c/6f1a3f592a73cee16f4c747e8704dfd51823f2e2ebfc97e5120ac8ae213f/python_getpaid_payu-0.1.0-py3-none-any.whl", hash = "sha256:ebd6952716a56e7f0340732f4ea4d94199de58ca3fcdf04365ba55340bcd1381", size = 15105, upload-time = "2026-02-14T00:56:02.442Z" },
+    { url = "https://files.pythonhosted.org/packages/2f/59/3259a18cef360fc7421d210da17a6af55912463981813f26eb834b9d92d9/python_getpaid_payu-3.0.0a4-py3-none-any.whl", hash = "sha256:f75e2d56160c499e087a6ad6825f6bb6720fdfb5f7c982c0f701e22801a4bf36", size = 21206, upload-time = "2026-03-21T09:33:10.652Z" },
 ]
 
 [[package]]
 name = "python-getpaid-przelewy24"
-version = "0.1.0"
+version = "3.0.0a3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
     { name = "python-getpaid-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d3/ae/d5849c2fabd0fe4ff38b7d5e8c038d25448c2d6aeb913d3d926d9037575d/python_getpaid_przelewy24-0.1.0.tar.gz", hash = "sha256:e316346c4c24c8c1d81bc00dd3cfa0f35a185a7c5b7196c0f089309eceb67d5b", size = 62683, upload-time = "2026-02-14T00:58:17.237Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b1/84/972a53e095cdec1c4f0cc4e82f302bc5347d87119d51c6d8092d0b8e06c3/python_getpaid_przelewy24-3.0.0a3.tar.gz", hash = "sha256:9b5884ff3f976b51645e03e981b716e18bc3086659ec0ec6ddee96431573ff60", size = 23024, upload-time = "2026-03-22T10:49:12.395Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c3/7d/f7864356997edba189a32d7436a0f9e9463f2701024ad1b04812cf085e90/python_getpaid_przelewy24-0.1.0-py3-none-any.whl", hash = "sha256:8c200786bd5103bef8f919332ec12063df505e31173e27d6160e42ac824cc6b3", size = 11808, upload-time = "2026-02-14T00:58:15.561Z" },
+    { url = "https://files.pythonhosted.org/packages/13/6f/4fab40e25800457d657127538cf2599db3b182636e0e31411559f22ba252/python_getpaid_przelewy24-3.0.0a3-py3-none-any.whl", hash = "sha256:e56b28fdf0a3b98e902d7be63bcdd5dc5f622eeaca327af69dc512b1b9f389ac", size = 12025, upload-time = "2026-03-22T10:49:13.255Z" },
 ]
 
 [[package]]
