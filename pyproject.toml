@@ -60,6 +60,11 @@ Changelog = 'https://github.com/django-getpaid/python-getpaid/releases'
 requires = ['setuptools>=75.0']
 build-backend = 'setuptools.build_meta'
 
+[dependency-groups]
+dev = [
+    'pip-audit>=2.7.0',
+]
+
 [tool.setuptools]
 # Metadata-only package -- no Python source to ship.
 py-modules = []
