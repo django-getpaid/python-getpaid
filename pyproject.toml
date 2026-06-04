@@ -1,6 +1,6 @@
 [project]
 name = 'python-getpaid'
-version = "3.0.0a4"
+version = "3.0.0"
 description = 'Umbrella package for the python-getpaid payment processing ecosystem.'
 readme = 'README.md'
 license = 'MIT'
@@ -9,7 +9,7 @@ authors = [
 ]
 requires-python = '>=3.12'
 classifiers = [
-    'Development Status :: 3 - Alpha',
+    'Development Status :: 5 - Production/Stable',
     'Intended Audience :: Developers',
     'Programming Language :: Python :: 3.12',
     'Programming Language :: Python :: 3.13',
@@ -18,20 +18,20 @@ classifiers = [
     'Typing :: Typed',
 ]
 dependencies = [
-    'python-getpaid-core>=3.0.0a4',
+    'python-getpaid-core>=3.0.0',
 ]
 
 [project.optional-dependencies]
 # --- Payment gateway backends ---
-payu = ['python-getpaid-payu>=3.0.0a4']
-paynow = ['python-getpaid-paynow>=3.0.0a4']
-przelewy24 = ['python-getpaid-przelewy24>=3.0.0a3']
-bitpay = ['python-getpaid-bitpay>=3.0.0a3']
+payu = ['python-getpaid-payu>=3.0.0']
+paynow = ['python-getpaid-paynow>=3.0.0']
+przelewy24 = ['python-getpaid-przelewy24>=3.0.0']
+bitpay = ['python-getpaid-bitpay>=3.0.0']
 
 # --- Framework adapters ---
-django = ['django-getpaid>=3.0.0a3']
-fastapi = ['fastapi-getpaid>=3.0.0a3']
-litestar = ['litestar-getpaid>=3.0.0a3']
+django = ['django-getpaid>=3.0.0']
+fastapi = ['fastapi-getpaid>=3.0.0']
+litestar = ['litestar-getpaid>=3.0.0']
 
 # --- Bundles ---
 backends = [
@@ -63,7 +63,11 @@ build-backend = 'setuptools.build_meta'
 [dependency-groups]
 dev = [
     'pip-audit>=2.7.0',
+    'pytest>=8.0',
 ]
+
+[tool.pytest.ini_options]
+testpaths = ['tests']
 
 [tool.setuptools]
 # Metadata-only package -- no Python source to ship.
