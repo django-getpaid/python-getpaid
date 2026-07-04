@@ -17,9 +17,6 @@ jobs:
           - payu
           - paynow
           - przelewy24
-          - bitpay
-          - fastapi
-          - litestar
           - django
           - backends
           - frameworks
@@ -52,25 +49,18 @@ jobs:
               "payu": ["getpaid_payu"],
               "paynow": ["getpaid_paynow"],
               "przelewy24": ["getpaid_przelewy24"],
-              "bitpay": ["getpaid_bitpay"],
-              "fastapi": ["fastapi_getpaid"],
-              "litestar": ["litestar_getpaid"],
               "django": ["getpaid"],
               "backends": [
                   "getpaid_payu",
                   "getpaid_paynow",
                   "getpaid_przelewy24",
-                  "getpaid_bitpay",
               ],
-              "frameworks": ["getpaid", "fastapi_getpaid", "litestar_getpaid"],
+              "frameworks": ["getpaid"],
               "all": [
                   "getpaid",
-                  "fastapi_getpaid",
-                  "litestar_getpaid",
                   "getpaid_payu",
                   "getpaid_paynow",
                   "getpaid_przelewy24",
-                  "getpaid_bitpay",
               ],
           }
 
