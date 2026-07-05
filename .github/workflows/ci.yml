@@ -20,11 +20,17 @@ jobs:
       - name: Install uv
         run: pip install uv
 
-      - name: Validate pyproject.toml
-        run: uv build --dry-run 2>&1 || true
+      - name: Check lockfile is up to date
+        run: uv lock --check
+
+      - name: Build package
+        run: uv build
 
       - name: Audit dependencies
-        run: uv run pip-audit --strict
+        # --skip-editable: the project itself is installed editable at a
+        # not-yet-released version, so it cannot be audited against PyPI.
+        # Known vulnerabilities in dependencies still fail the build.
+        run: uv run pip-audit --skip-editable
 
       - name: Verify package metadata
         run: |
